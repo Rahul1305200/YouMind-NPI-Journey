@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en" class="dash-page">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your free check-in · YouMind × NPI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=240">
+  <link rel="stylesheet" href="journey.css?v=73">
+  <link rel="stylesheet" href="npi.css?v=12">
+<meta name="robots" content="noindex">
+</head>
+<body class="dash-page bespoke-page npi-page npi-assess">
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+    <symbol id="icon-arrow-ne" viewBox="0 0 20 20">
+      <g transform="translate(10 10) rotate(-45) translate(-8.834 -7.226)">
+        <path fill="currentColor" d="M10.14 0.4C10.16 0.38 10.57 0.28 11.05 0.17C11.54 0.06 11.94 -0.02 11.95 0C11.96 0.02 12.01 0.36 12.06 0.76C12.17 1.54 12.44 2.47 12.73 3.04C13.62 4.84 15.23 6.03 17.17 6.34L17.67 6.41L17.67 7.21L17.67 8L17.22 8.08C14.28 8.57 12.36 10.77 12 14.06C11.98 14.28 11.95 14.45 11.94 14.45C11.84 14.45 10.2 14.05 10.16 14.02C10.14 14 10.16 13.8 10.2 13.58C10.68 11.1 12.04 9.09 13.81 8.25L14.23 8.04L5.51 8.03L0 8.02L0 6.41L5.53 6.4L14.22 6.39L13.69 6.12C12.3 5.41 11.2 4.03 10.55 2.18C10.37 1.65 10.09 0.45 10.14 0.4Z"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true" aria-label="Site menu">
+    <div class="mobile-drawer-head">
+      <a class="mobile-drawer-logo" href="https://youmind.org/" aria-label="YouMind">
+        <img src="assets/065c9eb59e0f98fd.png" alt="YouMind">
+      </a>
+      <button class="mobile-drawer-close" id="drawerClose" type="button" aria-label="Close menu">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="mobile-drawer-body">
+      <a class="mobile-drawer-link" href="https://youmind.org/offerings/">Offerings</a>
+      <div class="mobile-acc">
+        <button type="button" class="mobile-drawer-link mobile-acc-toggle" aria-expanded="false" aria-controls="mobileSciPanel">
+          <span>The Science</span>
+          <svg class="mobile-acc-chevron" width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 4.2l3.5 3.6 3.5-3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mobile-acc-panel" id="mobileSciPanel" hidden>
+          <a class="mobile-sub" href="https://youmind.org/personalized-brain-entrainment/"><span><span class="mega-title">Personal / Bespoke Science</span><span class="mega-desc">Personalized brain entrainment protocols built around your own biology.</span></span></a>
+          <a class="mobile-sub" href="https://youmind.org/healthcare-science/"><span><span class="mega-title">Healthcare Science</span><span class="mega-desc">Recovery and resilience science for clinicians facing chronic fatigue and burnout.</span></span></a>
+          <a class="mobile-sub" href="https://youmind.org/hospitality-science/"><span><span class="mega-title">Hospitality Science</span><span class="mega-desc">Energy and recovery science for demanding, always-on service teams.</span></span></a>
+          <a class="mobile-sub" href="https://youmind.org/defense-tactical-science/"><span><span class="mega-title">Defense &amp; Tactical Science</span><span class="mega-desc">Stress-regulation science for operators in high-stakes environments.</span></span></a>
+          <a class="mobile-sub" href="https://youmind.org/elite-athletics-science/"><span><span class="mega-title">Elite Athletics Science</span><span class="mega-desc">Recovery and sleep science to sharpen peak performance.</span></span></a>
+          <a class="mobile-sub" href="https://youmind.org/organizational-performance-science/"><span><span class="mega-title">Organizational Performance Science</span><span class="mega-desc">Science behind workforce resilience and executive capacity.</span></span></a>
+        </div>
+      </div>
+      <a class="mobile-drawer-link" href="https://youmind.org/insights/">Insights</a>
+      <a class="mobile-drawer-link" href="https://youmind.org/faqs/">Faqs</a>
+      <a class="mobile-drawer-link" href="https://youmind.org/testimonials/">Testimonials</a>
+      <a class="mobile-drawer-link" href="https://youmind.org/podcasts/">Podcasts</a>
+    </div>
+    <div class="mobile-drawer-foot">
+      <a class="btn-contact" href="https://youmind.org/contact-us/">
+        <span>Contact Us</span>
+        <span class="btn-contact-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </aside>
+
+  <div class="page">
+
+    <section class="hero dash-top">
+      <div class="hero-deco" aria-hidden="true"></div>
+      <header class="nav-wrap">
+        <nav class="nav" id="siteNav" aria-label="Primary">
+          <a class="nav-logo" href="https://youmind.org/" aria-label="YouMind">
+            <img src="assets/065c9eb59e0f98fd.png" alt="YouMind">
+          </a>
+          <button class="nav-menu-btn" id="navMenuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNavLinks">
+            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true">
+              <path d="M1 1h10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+              <path d="M1 7h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+              <path d="M7 13h10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <ul class="nav-links" id="siteNavLinks">
+            <li class="nav-item has-mega" id="offTrigger">
+              <button class="nav-link nav-link--btn" type="button" aria-expanded="false" aria-controls="offMenu">
+                Offerings
+                <svg class="nav-chevron" width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 4.2l3.5 3.6 3.5-3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="mega-menu" id="offMenu" role="menu" hidden>
+                <a class="mega-item" href="https://youmind.org/personal-bespoke/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 11a2 2 0 00-2 2c0 1.5-.15 3.4-.4 5"/><path d="M14 13c0 2.4-.15 5.6-1 8"/><path d="M9.2 13.2c-.25 2.2-.8 4.4-1.7 6.3"/><path d="M16.5 14.2c.2 1.8.15 4-.4 6"/><path d="M7.2 11.2a5 5 0 019.6 1.2"/><path d="M5 14.5a8 8 0 0114 1"/><path d="M4.5 18c-1 1.6-1.8 3-2.5 4"/><path d="M19.6 17.8c.7 1.5 1.2 2.8 1.4 4.2"/></svg></span>
+                  <span><span class="mega-title">Personal / Bespoke</span><span class="mega-desc">Personalized protocols. Smarter focus. Better recovery.</span></span>
+                </a>
+                <a class="mega-item" href="https://youmind.org/healthcare/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v7a6 6 0 006 6 6 6 0 006-6V3"/><path d="M4 3h4M16 3h4"/><path d="M12 16v2a3 3 0 003 3"/><circle cx="18" cy="20" r="2"/></svg></span>
+                  <span><span class="mega-title">Healthcare</span><span class="mega-desc">Build resilience. Reduce burnout. Improve performance.</span></span>
+                </a>
+                <a class="mega-item" href="https://youmind.org/hospitality/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v14"/><path d="M3 11h16a2 2 0 012 2v8"/><path d="M3 18h18"/><path d="M7 11V8a2 2 0 012-2h6a2 2 0 012 2v3"/></svg></span>
+                  <span><span class="mega-title">Hospitality</span><span class="mega-desc">Enhance sleep. Elevate guest recovery.</span></span>
+                </a>
+                <a class="mega-item" href="https://youmind.org/defense-tactical/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3.5v5.8c0 4.6-3.2 8.8-8 9.7-4.8-.9-8-5.1-8-9.7V6.5L12 3z"/></svg></span>
+                  <span><span class="mega-title">Defense &amp; Tactical</span><span class="mega-desc">Strengthen resilience. Support recovery under pressure.</span></span>
+                </a>
+                <a class="mega-item" href="https://youmind.org/elite-athletics/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 7-4-14-3 7H2"/></svg></span>
+                  <span><span class="mega-title">Elite Athletics</span><span class="mega-desc">Optimize readiness. Accelerate recovery. Protect performance.</span></span>
+                </a>
+                <a class="mega-item" href="https://youmind.org/organizational-performance/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><path d="M3 12h18"/></svg></span>
+                  <span><span class="mega-title">Corporate / Organizational</span><span class="mega-desc">Build resilience. Reduce burnout. Improve performance.</span></span>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item has-mega" id="sciTrigger">
+              <button class="nav-link nav-link--btn" type="button" aria-expanded="false" aria-controls="sciMenu">
+                The Science
+                <svg class="nav-chevron" width="14" height="14" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 4.2l3.5 3.6 3.5-3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="mega-menu" id="sciMenu" role="menu" hidden>
+                <a class="mega-item" href="https://youmind.org/personalized-brain-entrainment/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3.5 3.5 0 00-3.4 4.2 4 4 0 00-2.1 6.6A3.5 3.5 0 009.5 21h5a3.5 3.5 0 002.9-5.2 4 4 0 00-2-6.6A3.5 3.5 0 0012 5z"/><path d="M12 5v16M9.5 10.5c.8.4 1.7.4 2.5 0M9.5 14c.8.4 1.7.4 2.5 0"/></svg></span>
+                  <span><span class="mega-title">Personal / Bespoke Science</span><span class="mega-desc">Personalized brain entrainment protocols built around your own biology.</span></span>
+                </a>
+                <a class="mega-item" href="https://youmind.org/healthcare-science/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v7a6 6 0 006 6 6 6 0 006-6V3"/><path d="M4 3h4M16 3h4"/><path d="M12 16v2a3 3 0 003 3"/><circle cx="18" cy="20" r="2"/></svg></span>
+                  <span><span class="mega-title">Healthcare Science</span><span class="mega-desc">Recovery and resilience science for clinicians facing chronic fatigue and burnout.</span></span>
+                </a>
+                <a class="mega-item" href="https://youmind.org/hospitality-science/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v14"/><path d="M3 11h16a2 2 0 012 2v8"/><path d="M3 18h18"/><path d="M7 11V8a2 2 0 012-2h6a2 2 0 012 2v3"/></svg></span>
+                  <span><span class="mega-title">Hospitality Science</span><span class="mega-desc">Energy and recovery science for demanding, always-on service teams.</span></span>
+                </a>
+                <a class="mega-item" href="https://youmind.org/defense-tactical-science/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3.5v5.8c0 4.6-3.2 8.8-8 9.7-4.8-.9-8-5.1-8-9.7V6.5L12 3z"/></svg></span>
+                  <span><span class="mega-title">Defense &amp; Tactical Science</span><span class="mega-desc">Stress-regulation science for operators in high-stakes environments.</span></span>
+                </a>
+                <a class="mega-item" href="https://youmind.org/elite-athletics-science/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 7-4-14-3 7H2"/></svg></span>
+                  <span><span class="mega-title">Elite Athletics Science</span><span class="mega-desc">Recovery and sleep science to sharpen peak performance.</span></span>
+                </a>
+                <a class="mega-item" href="https://youmind.org/organizational-performance-science/" role="menuitem">
+                  <span class="mega-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="7" height="11"/><rect x="14" y="6" width="7" height="15"/><path d="M6.5 14v2M6.5 7V4M17.5 10V7"/></svg></span>
+                  <span><span class="mega-title">Organizational Performance Science</span><span class="mega-desc">Science behind workforce resilience and executive capacity.</span></span>
+                </a>
+              </div>
+            </li>
+            <li><a class="nav-link" href="https://youmind.org/insights/">Insights</a></li>
+            <li><a class="nav-link" href="https://youmind.org/faqs/">Faqs</a></li>
+            <li><a class="nav-link" href="https://youmind.org/testimonials/">Testimonials</a></li>
+            <li><a class="nav-link" href="https://youmind.org/podcasts/">Podcasts</a></li>
+          </ul>
+          <a class="btn-contact" href="https://youmind.org/contact-us/">
+            <span>Contact Us</span>
+            <span class="btn-contact-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </nav>
+      </header>
+
+      <div class="bespoke-intro">
+        <div class="bespoke-split">
+          <div class="bespoke-copy">
+            <div id="bespokeWelcome">
+          <h1 class="listen-hero-title bespoke-hero-title">
+            <span>Your free</span>
+            <em>check-in</em>
+          </h1>
+          <p class="bespoke-sub">For athletes who came through NPI. Two short voice baselines, then five questions about sleep, pressure, focus and energy. It takes about 14 minutes, and your starter insight is free.</p>
+          <p class="npi-lockup"><span class="npi-mark"><span>YouMind</span> <span class="npi-x" aria-hidden="true">×</span> <b>NPI</b></span><span class="npi-code" id="codeChip"><img src="assets/icons/icon-27dc8bff5b07a4bc.svg" alt="" width="14" height="14">Code NPI applied</span></p>
+        </div>
+            <div class="bespoke-aside" id="nativeAside">
+          <p class="bespoke-aside-title">Use Your Native Language</p>
+          <p>Our system listens not only to what you say but also to how you say it. It analyzes the pacing and subtle tension in your voice to understand you more accurately. For the most accurate and personalized experience, please speak freely in your native language.</p>
+        </div>
+          </div>
+            <div class="bespoke-stage" id="stage">
+            <div class="stage-progress">
+              <div class="prog-head">
+                <span class="prog-label" id="progLabel">About you</span>
+                <p class="assess-time" id="assessTime" aria-live="polite"></p>
+              </div>
+              <div class="prog-track" id="assessSteps" role="progressbar" aria-label="Assessment progress" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1"><span class="prog-fill" id="progFill"></span></div>
+            </div>
+            <div class="bespoke-card" id="emailCard">
+              <div class="bespoke-card-head">
+                <span class="bespoke-card-icon" aria-hidden="true"><img src="assets/icons/speaking-head.svg" alt="" width="40" height="40"></span>
+                <div>
+                  <h2>Let’s start with you</h2>
+                  <p class="bespoke-card-lead">Your starter insight goes to this email. Nobody else sees it: not NPI, not your coach, not your parents.</p>
+                </div>
+              </div>
+              <form class="bespoke-form" id="bespokeForm" novalidate>
+                <div class="bespoke-field"><label for="youmind-name">Name</label>
+                  <input type="text" id="youmind-name" name="name" placeholder="Your first name" autocomplete="given-name" required aria-describedby="detailsError"></div>
+                <div class="bespoke-field"><label for="youmind-email">Email</label>
+                  <input type="email" id="youmind-email" name="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="detailsError"></div>
+                <div class="npi-field-row">
+                  <div class="bespoke-field"><label for="npi-age">Age</label>
+                    <input type="number" id="npi-age" name="age" inputmode="numeric" min="1" max="99" placeholder="e.g. 16" required aria-describedby="detailsError"></div>
+                  <div class="bespoke-field"><label for="npi-sport">Sport <span>Optional</span></label>
+                    <input type="text" id="npi-sport" name="sport" placeholder="e.g. baseball" autocomplete="off"></div>
+                </div>
+                <div class="npi-parent" id="parentFields" hidden>
+                  <p class="npi-parent-note">You’re under 18, so a parent or guardian says yes first. We’ll email them. They won’t see your answers or results.</p>
+                  <div class="bespoke-field"><label for="npi-parent-name">Parent or guardian’s name</label>
+                    <input type="text" id="npi-parent-name" name="parent_name" placeholder="Their full name" autocomplete="off"></div>
+                  <div class="bespoke-field"><label for="npi-parent-email">Parent or guardian’s email</label>
+                    <input type="email" id="npi-parent-email" name="parent_email" placeholder="parent@example.com" autocomplete="off"></div>
+                </div>
+                <div class="bespoke-field"><label for="youmind-partner">Code</label>
+                  <input type="text" id="youmind-partner" name="code" value="NPI" autocomplete="off" spellcheck="false" aria-describedby="codeHelp"></div>
+                <p class="npi-field-help" id="codeHelp">Filled in from your NPI link. It gives you the free check-in.</p>
+                <input type="hidden" id="npi-source" name="source" value="">
+                <p class="assess-error" id="detailsError" role="alert" hidden>Please check your details.</p>
+                <button type="submit" class="btn-explore protocol-btn-sm" id="youmind-start">
+                  <span>Continue</span>
+                  <span class="btn-explore-icon" aria-hidden="true"><svg class="icon-arrow-ne" width="18" height="18"><use href="#icon-arrow-ne"/></svg></span>
+                </button>
+              </form>
+            </div>
+            <div class="bespoke-card npi-gate" id="youngCard" hidden>
+              <div class="bespoke-card-head">
+                <span class="bespoke-card-icon" aria-hidden="true"><img src="assets/icons/clock-24.svg" alt="" width="40" height="40"></span>
+                <div>
+                  <h2 tabindex="-1" id="youngTitle">You’re a little early</h2>
+                  <p class="bespoke-card-lead">YouMind is for athletes 13 and over, so we can’t start a check-in yet. We’d be glad to hear from you when you’re 13.</p>
+                </div>
+              </div>
+              <p class="npi-gate-note">Nothing you typed has been saved.</p>
+              <div class="npi-gate-actions">
+                <a class="btn-explore protocol-btn-sm" href="npi.html"><span>Back to the NPI page</span><span class="btn-explore-icon" aria-hidden="true"><svg class="icon-arrow-ne" width="18" height="18"><use href="#icon-arrow-ne"/></svg></span></a>
+                <button type="button" class="link-read npi-gate-back" data-gate-back>I typed my age wrong</button>
+              </div>
+            </div>
+
+            <div class="bespoke-card npi-gate" id="consentCard" hidden>
+              <div class="bespoke-card-head">
+                <span class="bespoke-card-icon" aria-hidden="true"><img src="assets/icons/shield-check.svg" alt="" width="40" height="40"></span>
+                <div>
+                  <h2 tabindex="-1" id="consentTitle">We’ve asked your parent</h2>
+                  <p class="bespoke-card-lead" id="consentLead">We sent an email to your parent asking for their OK. When they say yes, we’ll email you, and you can start right here.</p>
+                </div>
+              </div>
+              <ol class="npi-wait-steps" id="consentSteps">
+                <li class="is-done"><span aria-hidden="true"></span>Your details are in</li>
+                <li class="is-now" id="consentStepParent"><span aria-hidden="true"></span>Waiting for your parent’s OK</li>
+                <li id="consentStepStart"><span aria-hidden="true"></span>Your check-in</li>
+              </ol>
+              <p class="assess-error" id="consentError" role="alert" hidden></p>
+              <div class="npi-demo" id="consentDemo">Prototype: <a href="emails/01-parent-consent.html" target="_blank" rel="noopener" id="consentDemoLink">open the email your parent gets</a> and press “I agree” there, then come back.</div>
+              <div class="npi-gate-actions">
+                <button type="button" class="btn-explore protocol-btn-sm" id="consentGo"><span id="consentGoLabel">My parent said yes, continue</span><span class="btn-explore-icon" aria-hidden="true"><svg class="icon-arrow-ne" width="18" height="18"><use href="#icon-arrow-ne"/></svg></span></button>
+                <button type="button" class="link-read npi-gate-back" data-gate-back>Change my details</button>
+              </div>
+            </div>
+
+        <!-- Assessment: two voice baselines, then five questions, one recording each -->
+        <div class="bespoke-card bespoke-card--assess" id="assessCard" hidden>
+
+          <div class="assess-pane" id="assessPane">
+            <header class="assess-head">
+              <span class="assess-icon" aria-hidden="true"><img id="assessIcon" src="assets/icons/moon.svg" alt="" width="40" height="40"></span>
+              <div class="assess-head-text">
+                <h2 class="assess-title" id="assessTitle" tabindex="-1"></h2>
+                <p class="assess-question" id="assessQuestion"></p>
+              </div>
+            </header>
+
+            <div class="assess-body">
+              <div class="assess-side">
+                <div class="assess-guide" id="assessGuide"></div>
+              </div>
+
+              <div class="assess-answer">
+                <p class="assess-label">Record your response.</p>
+
+                <div class="assess-wave" id="assessWave" aria-hidden="true"></div>
+
+                <button type="button" class="assess-record" id="recordBtn" aria-pressed="false">
+                  <span class="assess-record-orb"><svg class="assess-record-ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="34" height="34" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg></span>
+                  <span id="recordLabel">Tap to record</span>
+                </button>
+
+                <div class="assess-mic">
+                  <span class="assess-mic-ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" stroke-width="1.7"/><path d="M5.5 11.5a6.5 6.5 0 0013 0M12 18v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+                  <span>Please make sure your microphone is <strong>enabled</strong> if not then <button type="button" class="assess-link" id="micHelpToggle">click here</button> for instructions</span>
+                </div>
+                <p class="assess-mic-help" id="micHelp" hidden>Click the lock icon at the left of your browser’s address bar, set Microphone to Allow, then reload this page.</p>
+
+                <audio class="assess-audio" id="assessAudio" controls hidden></audio>
+
+                <p class="assess-or" aria-hidden="true" hidden><span>or</span></p>
+
+                <div class="assess-options" hidden>
+                  <div class="assess-drop" id="assessDrop">
+                    <span class="assess-opt-ico" aria-hidden="true"><img src="assets/icons/file-tray.svg" alt="" width="24" height="24"></span>
+                    <label class="assess-file">
+                      <input type="file" id="assessFile" accept="audio/*">
+                      <span class="assess-file-btn">Choose file</span>
+                      <span class="assess-file-name" id="assessFileName">No file chosen</span>
+                    </label>
+                  </div>
+                  <p class="assess-label assess-label--type" id="typeToggleRow"><span class="assess-opt-ico" aria-hidden="true"><img src="assets/icons/document.svg" alt="" width="24" height="24"></span><span class="assess-opt-text">If you prefer to type your response, please <button type="button" class="assess-link" id="typeToggle">click here</button>.</span></p>
+                  <textarea class="assess-text" id="assessText" rows="5" placeholder="Type your response in your own words…" hidden></textarea>
+                </div>
+
+                <p class="assess-error" id="assessError" role="alert" hidden></p>
+
+                <div class="assess-actions">
+              <button type="button" class="link-read assess-back" id="assessBack" hidden>Back</button>
+              <button type="button" class="btn-explore protocol-btn-sm" id="assessNext" hidden>
+                <span id="assessNextLabel">Next</span>
+                <span class="btn-explore-icon" aria-hidden="true"><svg class="icon-arrow-ne" width="18" height="18"><use href="#icon-arrow-ne"/></svg></span>
+              </button>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dash-shell">
+      <div class="dash-inner bespoke-shell">
+
+        <div class="thanks" id="doneCard" hidden>
+          <span class="thanks-check" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h1 class="listen-hero-title thanks-title" id="doneTitle" tabindex="-1">Thank You!</h1>
+          <p class="bespoke-sub">Your check-in is complete. We’re now listening to your answers to build your starter insight.</p>
+
+          <div class="thanks-card">
+            <h2>What happens next?</h2>
+            <div class="thanks-grid">
+              <div class="thanks-item">
+                <span class="thanks-ico" aria-hidden="true"><img src="assets/icons/ai-chip.svg" alt="" width="30" height="30"></span>
+                <h3>Analysis</h3>
+                <p>Our AI analyzes your responses to identify patterns and wellness opportunities.</p>
+              </div>
+              <div class="thanks-item">
+                <span class="thanks-ico" aria-hidden="true"><img src="assets/icons/hands-heart.svg" alt="" width="30" height="30"></span>
+                <h3>Personalization</h3>
+                <p>We shape a first look at your profile: sleep, pressure, focus and energy.</p>
+              </div>
+              <div class="thanks-item">
+                <span class="thanks-ico" aria-hidden="true"><img src="assets/icons/clock-24.svg" alt="" width="30" height="30"></span>
+                <h3>Delivery</h3>
+                <p>Your starter insight arrives in your email within 15 minutes. It’s free, and it’s only for you.</p>
+              </div>
+            </div>
+            <p class="thanks-note"><strong>Note:</strong> To ensure this analysis reaches you, please check your <strong>Spam</strong> or <strong>Promotions</strong> folder if you have not received your notification within this timeframe.</p>
+            <div class="npi-demo">Prototype: see <a href="emails/03-assessment-received.html" target="_blank" rel="noopener">the email you get now</a>, then <a href="emails/04-starter-insight-ready.html" target="_blank" rel="noopener">the one with your starter insight</a>.</div>
+            <button type="button" hidden id="assessAgain" aria-hidden="true"></button>
+          </div>
+        </div>
+
+        <div class="bespoke-aside">
+          <p class="bespoke-aside-title">Your results are yours</p>
+          <p>Your voice and answers are used only to build your profile and protocol. Nobody else sees them: not NPI, not coaches, colleges or recruiters, and not your parents. NPI only learns how many athletes signed up.</p>
+          <p>Please review our <a href="https://youmind.org/terms-of-use-and-privacy-policy/">Terms of Use</a> and <a href="https://youmind.org/terms-of-use-and-privacy-policy/">Privacy Policy</a> for details.</p>
+          <p><a href="https://youmind.org/wp-content/uploads/2026/02/Our-Validation-Methodology.pdf">Learn how</a> our system engineers and audits accuracy at every level.</p>
+        </div>
+
+        <div class="bespoke-safety">
+          <h2>Critical Safety Notice</h2>
+          <p>DO NOT USE YouMind sessions, files, or programs while driving, operating machinery, or in any situation requiring full attention.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img class="footer-logo" src="assets/065c9eb59e0f98fd.png" alt="YouMind">
+            <p>YouMind delivers science-backed neuro-acoustic protocols that help organizations</p>
+          </div>
+          <div class="footer-col">
+            <h4>COMPANY</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>RESOURCES</h4>
+            <ul>
+              <li><a href="#">Insights</a></li>
+              <li><a href="#">Science</a></li>
+              <li><a href="#">Frameworks</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Solution</h4>
+            <ul>
+              <li><a href="#">Personal</a></li>
+              <li><a href="#">Hospitality</a></li>
+              <li><a href="#">Healthcare</a></li>
+              <li><a href="#">Corporate</a></li>
+              <li><a href="#">Defense</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; 2026 YouMind&reg;. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+    <div class="privacy-pop" id="privacyPop" role="dialog" aria-modal="true" aria-labelledby="privTitle" hidden>
+    <div class="privacy-bg"></div>
+    <div class="privacy-card">
+      <span class="privacy-ico" aria-hidden="true"><img src="assets/icons/shield-check.svg" alt="" width="34" height="34"></span>
+      <h2 id="privTitle">Your results stay yours</h2>
+      <p>Nobody else sees your answers or results: not NPI, not your coaches, not colleges or recruiters, and not your parents. Your voice is used only to build your profile and protocol.</p>
+      <p class="privacy-sent">Your starter insight will be sent to <strong id="privacyEmail"></strong></p>
+      <button type="button" class="btn-explore protocol-btn-sm" id="privacyGo">
+        <span>I Understand, Begin</span>
+        <span class="btn-explore-icon" aria-hidden="true"><svg class="icon-arrow-ne" width="18" height="18"><use href="#icon-arrow-ne"/></svg></span>
+      </button>
+      <button type="button" class="privacy-edit" id="privacyBack">Edit my details</button>
+    </div>
+  </div>
+
+  <script src="npi-track.js"></script>
+  <script>
+    /* Mega menus — one open at a time, hover on desktop */
+    (function () {
+      var nav = document.getElementById('siteNav');
+      var compact = function () { return window.matchMedia('(max-width: 900px)').matches; };
+      var megas = [];
+      function wire(triggerId, menuId) {
+        var trigger = document.getElementById(triggerId), menu = document.getElementById(menuId);
+        var btn = trigger && trigger.querySelector('.nav-link--btn');
+        if (!trigger || !menu || !btn) return;
+        var timer, api = {};
+        function place() {
+          if (compact()) { menu.style.top = ''; menu.style.left = ''; return; }
+          var n = nav.getBoundingClientRect(), t = trigger.getBoundingClientRect();
+          menu.style.top = (n.bottom - t.top + 16) + 'px';
+          menu.style.left = '50%';
+        }
+        api.close = function () {
+          clearTimeout(timer);
+          trigger.classList.remove('is-open'); btn.classList.remove('is-open');
+          btn.setAttribute('aria-expanded', 'false'); menu.classList.remove('is-open');
+        };
+        function open() {
+          if (compact()) return;
+          clearTimeout(timer);
+          megas.forEach(function (m) { if (m !== api) m.close(); });
+          place(); menu.hidden = false;
+          trigger.classList.add('is-open'); btn.classList.add('is-open');
+          btn.setAttribute('aria-expanded', 'true'); menu.classList.add('is-open');
+        }
+        function soon() { clearTimeout(timer); timer = setTimeout(api.close, 80); }
+        trigger.addEventListener('mouseenter', open);
+        trigger.addEventListener('mouseleave', soon);
+        menu.addEventListener('mouseenter', open);
+        menu.addEventListener('mouseleave', soon);
+        btn.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          if (compact()) return;
+          trigger.classList.contains('is-open') ? api.close() : open();
+        });
+        window.addEventListener('resize', function () { if (compact()) api.close(); else if (trigger.classList.contains('is-open')) place(); });
+        megas.push(api);
+      }
+      wire('offTrigger', 'offMenu');
+      wire('sciTrigger', 'sciMenu');
+    })();
+
+    /* Mobile drawer */
+    (function () {
+      var openBtn = document.getElementById('navMenuBtn'), closeBtn = document.getElementById('drawerClose');
+      var drawer = document.getElementById('mobileDrawer'), backdrop = document.getElementById('drawerBackdrop');
+      if (!openBtn || !drawer || !backdrop) return;
+      var items = Array.prototype.slice.call(drawer.querySelectorAll('.mobile-acc'));
+      function setAcc(item, open) {
+        var b = item.querySelector('.mobile-acc-toggle'), p = item.querySelector('.mobile-acc-panel');
+        item.classList.toggle('is-open', open); b.setAttribute('aria-expanded', String(open)); p.hidden = !open;
+      }
+      items.forEach(function (item) {
+        item.querySelector('.mobile-acc-toggle').addEventListener('click', function (e) {
+          e.stopPropagation();
+          var will = !item.classList.contains('is-open');
+          items.forEach(function (o) { setAcc(o, o === item && will); });
+        });
+      });
+      function setOpen(open) {
+        document.body.classList.toggle('drawer-open', open);
+        drawer.classList.toggle('is-open', open);
+        drawer.setAttribute('aria-hidden', String(!open));
+        backdrop.hidden = !open;
+        openBtn.setAttribute('aria-expanded', String(open));
+        if (!open) items.forEach(function (i) { setAcc(i, false); });
+      }
+      openBtn.addEventListener('click', function (e) { e.stopPropagation(); setOpen(!drawer.classList.contains('is-open')); });
+      closeBtn.addEventListener('click', function () { setOpen(false); });
+      backdrop.addEventListener('click', function () { setOpen(false); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+      window.addEventListener('resize', function () { if (window.matchMedia('(min-width: 901px)').matches) setOpen(false); });
+    })();
+
+    /* Assessment flow: details form -> 2 baselines -> 5 questions -> done.
+       Each question takes one answer: a live recording, an uploaded audio file,
+       or typed text. Answers are held in memory only. */
+    (function () {
+      var STEPS = [
+        { label: 'Baseline 1 of 2', icon: 'speaking-head', title: 'Spontaneous Calibration',
+          q: 'Before we begin, please briefly introduce yourself. Tell us your sport, how long you\'ve been playing, and what a typical training week looks like.',
+          text: 'A relaxed, natural intro — this simply lets us hear your everyday speaking voice.' },
+        /* Three set sentences for individuals (task #77: the organisational ACE sentences are not used here). To confirm with Keith. */
+        { label: 'Baseline 2 of 2', icon: 'document', title: 'Structured Calibration',
+          q: 'Please read the following three sentences aloud in your normal speaking voice:',
+          read: ['A steady routine helps the body recover between long days of training and rest.', 'Weekly schedules shift around practice, travel, school and the time left for sleep.', 'Keeping a calm baseline makes it easier to handle pressure when the moment arrives.'],
+          text: 'Read at a comfortable, even pace.' },
+        { label: 'Sleep', icon: 'moon', title: 'Sleep and Recovery Profile',
+          q: 'Looking at the past few months, and especially the past few weeks, how would you describe your sleep overall?',
+          lead: 'You can describe whatever comes to mind. For example:',
+          items: [['ic-sleep.png', 'Falling asleep easily or struggling to fall asleep'], ['ic-wave.png', 'Sleeping deeply or lightly'], ['ic-clock.png', 'Restless or broken sleep'], ['head-pulse.svg', 'Waking calm or waking with tension'], ['drop-gauge.svg', 'Feeling restored, neutral, or drained in the morning'], ['hands-heart.svg', 'Morning energy and emotional tone']] },
+        { label: 'Emotional', icon: 'drop-gauge', title: 'Emotional Regulation',
+          q: 'How would you describe your emotional state recently? What tends to show up most often during your days?',
+          lead: 'You can share whatever feels relevant. For example:',
+          items: [['hands-heart.svg', 'Generally calm, tense, anxious, irritated, heavy, or emotionally flat'], ['ic-chart.png', 'Stable mood or noticeable emotional spikes during the day'], ['ic-wave.png', 'Emotional tension that comes in waves or feels present most of the time'], ['head-pulse.svg', 'Body tension, mental pressure, or emotional fatigue'], ['ic-clock.png', 'How long this has been present weeks, months, or longer']] },
+        { label: 'Cognitive', icon: 'head-pulse', title: 'Cognitive Function and Mental Performance',
+          q: 'How does your mind feel when you are training, studying or concentrating, across different kinds of tasks?',
+          lead: 'You can describe whatever feels most true for you. For example:',
+          items: [['ic-play.png', 'Easy focus or difficulty getting started'], ['ic-clock.png', 'Staying focused briefly or sustaining focus for long periods'], ['ic-wave.png', 'Creative flow versus blocked or forced thinking'], ['ic-eye.png', 'Clear and sharp focus that fades over time'], ['speaking-head.svg', 'Scattered, overloaded, or racing thoughts'], ['drop-gauge.svg', 'Deep focus followed by mental fatigue or crashes'], ['ic-phone.png', 'Feeling mentally present versus frequently distracted']] },
+        { label: 'Physical', icon: 'lightning', title: 'Physical Energy Regulation',
+          q: 'How does your physical energy typically move throughout the day? Is it mostly sustained, or does it fluctuate at certain times?',
+          lead: 'You can describe whatever stands out. For example:',
+          items: [['ic-runner.png', 'Morning energy versus slow or heavy starts'], ['ic-chart.png', 'Midday drops, afternoon slumps, or evening rebounds'], ['ic-wave.png', 'Steady energy or noticeable peaks and crashes'], ['head-pulse.svg', 'Wired but tired, physically fatigued with a busy mind'], ['drop-gauge.svg', 'Energy changes linked to work, stress, meals, or rest'], ['ic-clock.png', 'Times of day when energy feels strongest or weakest']] },
+        { label: 'Intention', icon: 'gears-hand', title: 'Intention',
+          q: 'Right now, what would you most like to shift, support, or improve in your inner experience or daily life?',
+          text: 'There is no right or wrong answer. You can speak about anything that feels relevant to you at this moment. This might relate to how you feel, how you think, how you move through your days, or how you relate to yourself and your environment. You can be specific or general. Simply describe it in your own words.' }
+      ];
+
+      var $ = function (id) { return document.getElementById(id); };
+      var el = {
+        form: $('bespokeForm'), welcome: $('bespokeWelcome'), email: $('emailCard'), assess: $('assessCard'), done: $('doneCard'),
+        steps: $('assessSteps'), title: $('assessTitle'), q: $('assessQuestion'), guide: $('assessGuide'),
+        rec: $('recordBtn'), recLabel: $('recordLabel'), file: $('assessFile'), fileName: $('assessFileName'),
+        audio: $('assessAudio'), text: $('assessText'), typeToggle: $('typeToggle'), error: $('assessError'),
+        next: $('assessNext'), nextLabel: $('assessNextLabel'), back: $('assessBack'),
+        micToggle: $('micHelpToggle'), micHelp: $('micHelp')
+      };
+
+      /* Idle waveform behind the record button; it moves while recording. */
+      (function () {
+        var H = [10,18,30,14,38,22,44,26,16,34,46,20,32,12,40,24,36,16,28,42,18,30,12,22];
+        $('assessWave').innerHTML = H.map(function (h, i) { return '<i style="--h:' + h + 'px;--i:' + i + '"></i>'; }).join('');
+      })();
+
+      var answers = STEPS.map(function () { return null; }); /* { kind, blob|file, url, name } | { kind:'text', text } */
+      var current = 0;
+      var atDetails = true;
+      var person = { name: '', email: '', partner: '', age: 0, sport: '', parentName: '', parentEmail: '', source: '' };
+      var rec = { recorder: null, stream: null, chunks: [], timer: null, secs: 0 };
+
+      function esc(s) { return String(s).replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
+      function fmt(s) { return Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2); }
+      function showError(msg) { el.error.textContent = msg || ''; el.error.hidden = !msg; }
+      function hasAnswer(i) { var a = answers[i]; return !!a && (a.kind === 'text' ? a.text.trim().length > 0 : true); }
+
+      /* Progress: one thin bar and a label; "About you", then the two baselines, then the five questions. */
+      var LABELS = ['About you'].concat(STEPS.map(function (s) { return s.label; }));
+      function renderStepper() {
+        var k = atDetails ? 0 : current + 1;
+        var lab = $('progLabel');
+        if (lab.textContent !== LABELS[k]) {
+          lab.textContent = LABELS[k];
+          if (!reduced() && lab.animate) lab.animate([{ opacity: 0, transform: 'translateY(5px)' }, { opacity: 1, transform: 'none' }], { duration: 450, easing: EASE });
+        }
+        $('progFill').style.width = ((k + 1) / LABELS.length * 100) + '%';
+        el.steps.setAttribute('aria-valuenow', String(k + 1));
+      }
+
+      function renderAnswer() {
+        var a = answers[current];
+        var audioBacked = a && a.kind !== 'text';
+        el.audio.hidden = !audioBacked;
+        if (audioBacked) { el.audio.src = a.url; } else { el.audio.removeAttribute('src'); el.audio.load(); }
+        el.fileName.textContent = a && a.kind === 'file' ? a.name : 'No file chosen';
+        el.file.value = '';
+        if (a && a.kind === 'text') { el.text.hidden = false; el.text.value = a.text; }
+        else { el.text.value = ''; el.text.hidden = true; }
+        el.typeToggle.textContent = el.text.hidden ? 'click here' : 'use audio instead';
+        updateNext();
+      }
+
+      function updateNext() {
+        el.next.hidden = !hasAnswer(current);
+        el.nextLabel.textContent = current === STEPS.length - 1 ? 'Complete assessment' : 'Next';
+        el.back.hidden = false;
+      }
+
+      function renderStep() {
+        var s = STEPS[current];
+        stopRecording(true);
+        showError('');
+        renderStepper();
+        el.title.textContent = s.title;
+        $('assessIcon').src = 'assets/icons/' + s.icon + '.svg';
+        el.q.textContent = s.q;
+        /* Baseline 2: the sentences sit in their own card between the question and the mic (as in the walkthrough) */
+        var read = $('assessRead');
+        if (!read) { read = document.createElement('div'); read.id = 'assessRead'; read.className = 'assess-read'; document.querySelector('#assessPane .assess-head').insertAdjacentElement('afterend', read); }
+        read.hidden = !s.read;
+        read.innerHTML = s.read ? '<p class="assess-read-head">Read these three sentences</p><p class="assess-read-sub">' + esc(s.text) + '</p><ol>' +
+          s.read.map(function (t, n) { return '<li><span class="assess-read-num" aria-hidden="true">' + (n + 1) + '</span><span>' + esc(t) + '</span></li>'; }).join('') + '</ol>' : '';
+        el.guide.hidden = !!s.read;
+        el.guide.innerHTML = '<p class="assess-guide-head">Guidance for the user</p>' +
+          (s.items
+            ? '<p>' + esc(s.lead) + '</p><ul>' + s.items.map(function (it) { return '<li><span class="ag-ico" aria-hidden="true"><img src="assets/icons/' + it[0] + '" alt="" width="22" height="22"></span><span>' + esc(it[1]) + '</span></li>'; }).join('') + '</ul>'
+            : '<p>' + esc(s.text) + '</p>');
+        renderAnswer();
+      }
+
+      /* One-line promise per step: the person always knows what is left. */
+      var PROMISES = ['Before the questions', 'Before the questions', 'About 10 min left', 'About 8 min left', 'About 6 min left', 'About 4 min left', 'Last question · about 2 min left'];
+      var reduced = function () { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; };
+      var EASE = 'cubic-bezier(0.22, 0.61, 0.36, 1)';
+
+      function renderTime(animate) {
+        var t = $('assessTime');
+        t.textContent = atDetails ? 'About 14 min' : PROMISES[current];
+        if (animate && !reduced() && t.animate) {
+          t.animate([{ opacity: 0, transform: 'translateY(6px)' }, { opacity: 1, transform: 'none' }], { duration: 320, easing: EASE });
+        }
+      }
+
+      /* Old step eases out toward where you came from, new step eases in
+         from where you are going, then focus lands on the new question. */
+      function goTo(i) {
+        var dir = i > current ? 1 : -1;
+        var pane = $('assessPane');
+        var settle = function () {
+          el.title.focus({ preventScroll: true });
+          el.assess.scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'start' });
+        };
+        if (reduced() || !pane.animate) { current = i; renderStep(); renderTime(false); settle(); return; }
+        if (pane.getAnimations().length) pane.getAnimations().forEach(function (a) { a.finish(); });
+        pane.style.pointerEvents = 'none';
+        pane.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateX(' + (-18 * dir) + 'px)' }],
+          { duration: 180, easing: 'ease-in', fill: 'forwards' }).onfinish = function () {
+          current = i;
+          renderStep();
+          renderTime(true);
+          var enter = pane.animate([{ opacity: 0, transform: 'translateX(' + (22 * dir) + 'px)' }, { opacity: 1, transform: 'none' }],
+            { duration: 420, easing: EASE });
+          pane.getAnimations().forEach(function (a) { if (a !== enter) a.cancel(); });
+          pane.style.pointerEvents = '';
+          settle();
+        };
+      }
+
+      function setAnswer(a) {
+        var old = answers[current];
+        if (old && old.url) URL.revokeObjectURL(old.url);
+        answers[current] = a;
+        renderAnswer();
+      }
+
+      /* Once an answer is in (recorded or uploaded), lead the person to Next. */
+      function guideToNext() {
+        setTimeout(function () {
+          if (el.next.hidden) return;
+          var r = el.next.getBoundingClientRect();
+          if (r.top < 0 || r.bottom > window.innerHeight) el.next.scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'center' });
+          el.next.focus({ preventScroll: true });
+          el.next.classList.remove('is-nudge'); void el.next.offsetWidth; el.next.classList.add('is-nudge');
+        }, 450);
+      }
+      el.next.addEventListener('animationend', function (e) { if (e.animationName === 'nextNudge') el.next.classList.remove('is-nudge'); });
+
+      /* Recording */
+      function stopRecording(discard) {
+        if (rec.timer) { clearInterval(rec.timer); rec.timer = null; }
+        if (rec.recorder && rec.recorder.state !== 'inactive') {
+          rec.recorder.onstop = discard ? null : rec.recorder.onstop;
+          rec.recorder.stop();
+        }
+        if (rec.stream) { rec.stream.getTracks().forEach(function (t) { t.stop(); }); rec.stream = null; }
+        rec.recorder = null;
+        el.rec.classList.remove('is-recording');
+        el.rec.setAttribute('aria-pressed', 'false');
+        el.recLabel.textContent = answers[current] && answers[current].kind === 'recording' ? 'Record again' : 'Tap to record';
+      }
+
+      el.rec.addEventListener('click', function () {
+        showError('');
+        if (rec.recorder) { stopRecording(false); return; }
+        if (!navigator.mediaDevices || !window.MediaRecorder) {
+          showError('Recording isn’t supported in this browser. You can upload an audio file or type your response instead.');
+          return;
+        }
+        navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+          rec.stream = stream; rec.chunks = []; rec.secs = 0;
+          var r = new MediaRecorder(stream);
+          rec.recorder = r;
+          r.ondataavailable = function (e) { if (e.data && e.data.size) rec.chunks.push(e.data); };
+          r.onstop = function () {
+            var blob = new Blob(rec.chunks, { type: r.mimeType || 'audio/webm' });
+            setAnswer({ kind: 'recording', blob: blob, url: URL.createObjectURL(blob) });
+            el.recLabel.textContent = 'Record again';
+            guideToNext();
+          };
+          r.start();
+          el.rec.classList.add('is-recording');
+          el.rec.setAttribute('aria-pressed', 'true');
+          el.recLabel.textContent = 'Stop recording · 0:00';
+          rec.timer = setInterval(function () { rec.secs += 1; el.recLabel.textContent = 'Stop recording · ' + fmt(rec.secs); }, 1000);
+        }).catch(function () {
+          showError('We couldn’t reach your microphone. Check the instructions above, or upload an audio file or type your response instead.');
+          el.micHelp.hidden = false;
+        });
+      });
+
+      /* Upload */
+      el.file.addEventListener('change', function () {
+        var f = el.file.files && el.file.files[0];
+        if (!f) return;
+        if (f.type && f.type.indexOf('audio/') !== 0) { showError('Please choose an audio file.'); el.file.value = ''; return; }
+        showError('');
+        setAnswer({ kind: 'file', file: f, name: f.name, url: URL.createObjectURL(f) });
+        guideToNext();
+      });
+
+      /* Type instead */
+      el.typeToggle.addEventListener('click', function () {
+        if (el.text.hidden) {
+          stopRecording(true);
+          setAnswer(null);
+          el.text.hidden = false;
+          el.typeToggle.textContent = 'use audio instead';
+          el.text.focus();
+        } else {
+          el.text.hidden = true; el.text.value = '';
+          setAnswer(null);
+          el.typeToggle.textContent = 'click here';
+        }
+      });
+      el.text.addEventListener('input', function () {
+        answers[current] = el.text.value.trim() ? { kind: 'text', text: el.text.value } : null;
+        updateNext();
+      });
+
+      el.micToggle.addEventListener('click', function () { el.micHelp.hidden = !el.micHelp.hidden; });
+
+      /* Navigation */
+      el.next.addEventListener('click', function () {
+        stopRecording(false);
+        if (!hasAnswer(current)) return;
+        if (current < STEPS.length - 1) { goTo(current + 1); return; }
+        /* TODO: send person + answers to the assessment backend, then show this. */
+        try { localStorage.setItem('ym_npi_done', JSON.stringify({ email: person.email, at: Date.now() })); } catch (e3) {}
+        el.assess.hidden = true;
+        $('nativeAside').hidden = true;
+        document.querySelector('.bespoke-intro').hidden = true;
+        el.done.hidden = false;
+        $('doneTitle').focus({ preventScroll: true });
+        window.scrollTo({ top: 0, behavior: 'auto' });
+      });
+
+      /* The details card opens into the assessment in the same place:
+         the copy steps aside, the card widens, its content cross-fades. */
+      var split = document.querySelector('.bespoke-split');
+      var copy = document.querySelector('.bespoke-copy');
+      var intro = document.querySelector('.bespoke-intro');
+      var aside = $('nativeAside');
+      /* Choreography. One timeline, three layers:
+         1. geometry: the card widens/narrows in real pixels (not a CSS grid
+            transition, which cannot interpolate these track lists)
+         2. the stepper is ONE element that stays put and changes state
+         3. each piece of content enters or leaves in turn */
+      var stage = $('stage');
+      var morphing = false, running = [], timers = [], startedAt = 0;
+      var EASE_IO = 'cubic-bezier(0.65, 0, 0.35, 1)';
+      var arr = function (root, sel) { return Array.prototype.slice.call(root.querySelectorAll(sel)); };
+      var later = function (ms, fn) { timers.push(setTimeout(fn, ms)); };
+      var seg = function (node, delay, dur, from, to, ease) {
+        if (!node) return null;
+        var a = node.animate([from, to], { duration: dur, delay: delay, easing: ease || EASE, fill: 'both' });
+        running.push(a);
+        return a;
+      };
+      var show = function (nodes, t0, dur, gap, rise, side) {
+        [].concat(nodes).forEach(function (n, i) {
+          seg(n, t0 + i * gap, dur, { opacity: 0, transform: side ? 'translateX(' + side + 'px)' : 'translateY(' + rise + 'px)' }, { opacity: 1, transform: 'none' });
+        });
+      };
+      var hide = function (nodes, t0, dur, gap, rise, side) {
+        [].concat(nodes).forEach(function (n, i) {
+          seg(n, t0 + i * gap, dur, { opacity: 1, transform: 'none' }, { opacity: 0, transform: side ? 'translateX(' + side + 'px)' : 'translateY(' + (-rise) + 'px)' }, 'ease-in');
+        });
+      };
+      var clearAnims = function () {
+        timers.forEach(clearTimeout); timers = [];
+        running.forEach(function (a) { a.cancel(); });
+        running = [];
+        [copy, aside, stage, split].forEach(function (n) { n.getAnimations().forEach(function (a) { if (!(a instanceof CSSAnimation)) a.cancel(); }); });
+        stage.style.height = '';
+      };
+      var skip = function (e) {
+        if (e.type === 'keydown' && e.key !== 'Escape') return;
+        if (e.type === 'pointerdown' && performance.now() - startedAt < 500) return;
+        running.slice().forEach(function (a) { try { a.finish(); } catch (err) {} });
+      };
+
+      /* The stepper and its time line are single elements; they live inside
+         whichever card is on top, at the same spot in both. */
+      renderStepper(); renderTime(false);
+
+      function snap() {
+        var s = split.getBoundingClientRect();
+        return { ch: $('bespokeWelcome').offsetHeight, cw: copy.offsetWidth, sw: stage.offsetWidth, W: s.width, H: s.height, top: stage.getBoundingClientRect().top,
+          ctop: copy.getBoundingClientRect().top - s.top, gap: parseFloat(getComputedStyle(split).columnGap) || 0 };
+      }
+
+      function morph(opening) {
+        var from = opening ? el.email : el.assess;
+        var to = opening ? el.assess : el.email;
+        var btn = $('youmind-start'), btnLabel = btn.firstElementChild;
+        var instant = reduced() || !stage.animate || !split.animate;
+        var phone = window.matchMedia('(max-width: 860px)').matches;
+        var settleState = function () {
+          atDetails = !opening;
+          renderStepper(); renderTime(false);
+        };
+        var finish = function () {
+          document.removeEventListener('pointerdown', skip, true);
+          document.removeEventListener('keydown', skip, true);
+          clearAnims();
+          settleState();
+          from.hidden = true; to.hidden = false;
+          to.classList.remove('is-morphing');
+          from.style.width = ''; to.style.width = '';
+          stage.classList.remove('is-morph');
+          split.classList.remove('is-morphing');
+          copy.style.overflow = ''; $('bespokeWelcome').style.overflow = '';
+          if (opening) { intro.appendChild(aside); } else { copy.appendChild(aside); }
+          aside.hidden = false;
+          if (opening && !instant && !phone) {
+            aside.animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: 700, easing: EASE });
+          }
+          btnLabel.textContent = 'Continue'; btn.disabled = false;
+          morphing = false;
+          (opening ? el.title : $('youmind-name')).focus({ preventScroll: true });
+          if (phone && !instant) { var top = stage.getBoundingClientRect().top; if (top < 0 || top > window.innerHeight * 0.4) stage.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        };
+        morphing = true;
+        if (instant) { split.classList.toggle('is-open', opening); finish(); return; }
+
+        /* 1. measure start and end layouts, without painting either */
+        var s0 = snap();
+        split.classList.toggle('is-open', opening);
+        to.classList.add('is-morphing'); to.hidden = false;
+        var s1 = snap(), h1 = to.offsetHeight;
+        split.classList.toggle('is-open', !opening);
+        void split.offsetWidth;
+        var closed = opening ? s0 : s1, open = opening ? s1 : s0, h0 = stage.offsetHeight;
+
+        /* both cards keep their final width while the box moves, so text never re-wraps mid-motion */
+        from.style.width = (opening ? closed.sw : open.sw) + 'px';
+        to.style.width = (opening ? open.sw : closed.sw) + 'px';
+
+        /* 2. start state: copy lifted out of the flow at fixed size, so it can
+              fade and slide without being squeezed by the closing column */
+        split.style.setProperty('--copy-w', closed.cw + 'px');
+        split.style.setProperty('--copy-top', closed.ctop + 'px');
+        split.classList.add('is-morphing');
+        stage.classList.add('is-morph');
+        split.classList.toggle('is-open', opening);
+        stage.style.height = h0 + 'px';
+        startedAt = performance.now();
+
+        var DUR = opening ? 1700 : 1200, G = opening ? 150 : 250, TOTAL = opening ? 3450 : 2100;
+        if (phone) {
+          /* phone: one column. The copy stays in the flow and folds away (or unfolds) while the card grows */
+          var ch = (opening ? s0 : s1).ch;
+          var wel = $('bespokeWelcome');
+          wel.style.overflow = 'hidden';
+          var cf = [{ height: ch + 'px', marginBottom: '0px', opacity: 1 }, { height: '0px', marginBottom: '-28px', opacity: 0 }];
+          if (!opening) cf.reverse();
+          running.push(wel.animate(cf, { duration: DUR, delay: G, easing: EASE_IO, fill: 'both' }));
+          running.push(stage.animate([{ height: h0 + 'px' }, { height: h1 + 'px' }], { duration: DUR, delay: G, easing: EASE_IO, fill: 'both' }));
+        } else {
+          var cols = ['' + closed.cw + 'px ' + closed.sw + 'px', '0px ' + open.sw + 'px'];
+          var frames = [
+            { gridTemplateColumns: cols[0], columnGap: closed.gap + 'px', maxWidth: closed.W + 'px', minHeight: closed.H + 'px' },
+            { gridTemplateColumns: cols[1], columnGap: '0px', maxWidth: open.W + 'px', minHeight: open.H + 'px' }
+          ];
+          if (!opening) frames.reverse();
+          running.push(split.animate(frames, { duration: DUR, delay: G, easing: EASE_IO, fill: 'both' }));
+          running.push(stage.animate([{ height: h0 + 'px', transform: 'translateY(' + (s0.top - s1.top) + 'px)' }, { height: h1 + 'px', transform: 'none' }],
+            { duration: DUR, delay: G, easing: EASE_IO, fill: 'both' }));
+          }
+        var clock = document.documentElement.animate([{ opacity: 1 }, { opacity: 1 }], { duration: TOTAL });
+        running.push(clock);
+        clock.onfinish = finish;
+        document.addEventListener('pointerdown', skip, true);
+        document.addEventListener('keydown', skip, true);
+
+        var E = el.email, A = el.assess, ans = A.querySelector('.assess-answer');
+        var sideEl = A.querySelector('.assess-side');
+        var sideNodes = getComputedStyle(sideEl).display === 'contents' ? arr(sideEl, ':scope > *') : [sideEl];
+        var copyBits = [copy.querySelector('.bespoke-hero-title'), copy.querySelector('.bespoke-sub'), (!phone && aside.parentNode === copy) ? aside : null].filter(Boolean);
+        if (opening) {
+          /* text leaves first, one line after another, toward the side it came from */
+          hide(copyBits, 0, 560, 130, 0, -28);
+          /* form lets go */
+          hide(arr(E, '.bespoke-field'), 0, 380, 90, 10);
+          hide([btn, $('detailsError')], 240, 340, 0, 8);
+          hide([E.querySelector('.bespoke-card-head')], 350, 450, 0, 8);
+          /* progress moves on, in order: time text, step 1 fills, line draws, step 2 lights */
+          later(700, function () { atDetails = false; renderStepper(); renderTime(true); });
+          btnLabel.textContent = 'Starting…'; btn.disabled = true;
+          /* the question arrives */
+          show([A.querySelector('.assess-icon')], 950, 560, 0, 10);
+          show([el.title, el.q], 1050, 640, 150, 10);
+          /* the voice part */
+          show([ans], 1400, 560, 0, 14);
+          show(arr(ans, '.assess-label:first-child'), 1550, 420, 0, 6);
+          arr($('assessWave'), 'i').forEach(function (b, i) {
+            seg(b, 1600 + i * 28, 560, { transform: 'scaleY(0.08)', opacity: 0.3 }, { transform: 'scaleY(1)', opacity: 1 });
+          });
+          show([$('recordBtn')], 2050, 480, 0, 12);
+          seg(document.querySelector('.assess-record-orb'), 2550, 800, { boxShadow: '0 0 0 0 rgba(25,154,145,0.4)' }, { boxShadow: '0 0 0 24px rgba(25,154,145,0)' }, 'ease-out');
+          show(arr(ans, '.assess-mic, .assess-or, .assess-options'), 2200, 480, 110, 8);
+          show(sideNodes, 2250, 620, 80, 0, 28);
+        } else {
+          hide(arr(A, '.assess-head, .assess-answer').concat(sideNodes), 0, 380, 70, 8);
+          if (phone) { copy.appendChild(aside); aside.hidden = false; }
+          else seg(aside, 0, 300, { opacity: 1 }, { opacity: 0 });
+          later(450, function () { atDetails = true; renderStepper(); renderTime(true); });
+          if (!phone) later(500, function () {
+            aside.getAnimations().forEach(function (a) { a.cancel(); });
+            copy.appendChild(aside); aside.hidden = false;
+            show([copy.querySelector('.bespoke-hero-title'), copy.querySelector('.bespoke-sub'), aside], 200, 560, 130, 0, -28);
+          });
+          show([E.querySelector('.bespoke-card-head')], 800, 440, 0, 8);
+          show(arr(E, '.bespoke-field'), 900, 440, 90, 10);
+          show([btn], 1250, 420, 0, 8);
+          /* hold the copy invisible until its turn */
+          copyBits.forEach(function (n) { seg(n, 0, 1, { opacity: 0 }, { opacity: 0 }); });
+        }
+      }
+      function openAssessment() { current = 0; renderStep(); morph(true); }
+      function closeAssessment(instant) {
+        if (instant) {
+          clearAnims();
+          atDetails = true; renderStepper(); renderTime(false);
+          el.assess.hidden = true; el.email.hidden = false; el.done.hidden = true; intro.hidden = false;
+          el.assess.style.width = ''; el.email.style.width = '';
+          split.classList.remove('is-open', 'is-morphing'); stage.classList.remove('is-morph');
+          copy.appendChild(aside); aside.hidden = false;
+          return;
+        }
+        morph(false);
+      }
+
+      /* Take another assessment: back to the details step, answers cleared. */
+      $('assessAgain').addEventListener('click', function () {
+        answers.forEach(function (a) { if (a && a.url) URL.revokeObjectURL(a.url); });
+        answers = STEPS.map(function () { return null; });
+        current = 0;
+        closeAssessment(true);
+        window.scrollTo({ top: 0, behavior: 'auto' });
+      });
+      el.back.addEventListener('click', function () {
+        if (morphing) return;
+        stopRecording(true);
+        if (current > 0) goTo(current - 1); else closeAssessment();
+      });
+
+      /* Details form -> first question */
+      /* NPI: age first. Under 13 cannot take part; 13 to 17 need a parent's OK by email before the
+         check-in; 18 and over go straight on. Nobody else ever sees the results (not NPI, coaches or parents).
+         Prototype: everything is kept in this browser; the real build saves it with the sign-up. */
+      var NPI_KEY = 'ym_npi_person', CONSENT_KEY = 'ym_npi_consent';
+      var cards = { young: $('youngCard'), consent: $('consentCard') };
+      var store = {
+        get: function (k) { try { return JSON.parse(localStorage.getItem(k) || 'null'); } catch (err) { return null; } },
+        set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (err) { /* storage blocked */ } }
+      };
+      var ageInput = $('npi-age'), parentFields = $('parentFields');
+      function ageNow() { var n = parseInt(ageInput.value, 10); return isFinite(n) ? n : 0; }
+      function syncParentFields() {
+        var a = ageNow(), minor = a >= 13 && a < 18;
+        parentFields.hidden = !minor;
+        $('npi-parent-name').required = minor; $('npi-parent-email').required = minor;
+      }
+      ageInput.addEventListener('input', syncParentFields);
+
+      /* Code and source: filled from the NPI link; a typed code NPI counts too. */
+      (function () {
+        var p = new URLSearchParams(location.search), code = $('youmind-partner');
+        if (p.get('code')) code.value = String(p.get('code')).toUpperCase().slice(0, 20);
+        function syncCode() {
+          var ok = code.value.trim().toUpperCase() === 'NPI';
+          $('codeChip').hidden = !ok;
+          if (ok && window.ymNpiSource) window.ymNpiSource.fromCode('NPI');
+          $('npi-source').value = window.ymNpiSource ? window.ymNpiSource.label() : '';
+        }
+        code.addEventListener('input', syncCode); syncCode();
+      })();
+
+      var saved = store.get(NPI_KEY);
+      if (saved) {
+        $('youmind-name').value = saved.name || ''; $('youmind-email').value = saved.email || '';
+        ageInput.value = saved.age || ''; $('npi-sport').value = saved.sport || '';
+        $('npi-parent-name').value = saved.parentName || ''; $('npi-parent-email').value = saved.parentEmail || '';
+        syncParentFields();
+      }
+
+      function showCard(which) {
+        el.email.hidden = which !== 'email';
+        cards.young.hidden = which !== 'young';
+        cards.consent.hidden = which !== 'consent';
+        var focusEl = which === 'young' ? $('youngTitle') : which === 'consent' ? $('consentTitle') : $('youmind-name');
+        if (focusEl) focusEl.focus({ preventScroll: true });
+      }
+      document.querySelectorAll('[data-gate-back]').forEach(function (b) { b.addEventListener('click', function () { showCard('email'); }); });
+
+      function consentFor(p) {
+        var c = store.get(CONSENT_KEY);
+        return !!(c && c.status === 'yes' && p && c.athleteEmail === p.email);
+      }
+      function renderConsent() {
+        var given = consentFor(person);
+        var firstParent = (person.parentName || 'your parent').split(' ')[0];
+        $('consentTitle').textContent = given ? firstParent + ' said yes' : 'We’ve asked your parent';
+        $('consentLead').textContent = given
+          ? 'Thank you. You can start your check-in now. Remember: they won’t see your answers or results.'
+          : 'We sent an email to ' + person.parentEmail + ' asking for their OK. When they say yes, we’ll email you, and you can start right here.';
+        $('consentStepParent').className = given ? 'is-done' : 'is-now';
+        $('consentStepParent').lastChild.textContent = given ? 'Your parent said yes' : 'Waiting for your parent’s OK';
+        $('consentStepStart').className = given ? 'is-now' : '';
+        $('consentGoLabel').textContent = given ? 'Start my check-in' : 'My parent said yes, continue';
+        $('consentDemo').hidden = given;
+        $('consentDemoLink').href = 'emails/01-parent-consent.html?athlete=' + encodeURIComponent(person.name) + '&email=' + encodeURIComponent(person.email) + '&parent=' + encodeURIComponent(person.parentName);
+        $('consentError').hidden = true;
+      }
+      $('consentGo').addEventListener('click', function () {
+        if (!consentFor(person)) {
+          $('consentError').textContent = 'We haven’t had their OK yet. Ask them to check their email, including Spam or Promotions.';
+          $('consentError').hidden = false;
+          return;
+        }
+        showCard('email');
+        showPrivacy();
+      });
+      /* Coming back to this tab after the parent agreed in another one. */
+      window.addEventListener('storage', function (e) { if (e.key === CONSENT_KEY && !cards.consent.hidden) renderConsent(); });
+      window.addEventListener('focus', function () { if (!cards.consent.hidden) renderConsent(); });
+
+      el.form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (morphing) return;
+        var err = $('detailsError');
+        var fail = function (msg, field) { err.textContent = msg; err.hidden = false; field.focus(); };
+        var name = $('youmind-name'), email = $('youmind-email');
+        if (!name.value.trim()) return fail('Please add your first name.', name);
+        if (!email.value || !email.checkValidity()) return fail('Please enter a valid email so we know where to send your starter insight.', email);
+        var age = ageNow();
+        if (!(age >= 1 && age <= 99)) return fail('Please enter your age.', ageInput);
+        if (age < 13) { err.hidden = true; showCard('young'); return; }
+        if (age < 18) {
+          var pn = $('npi-parent-name'), pe = $('npi-parent-email');
+          if (!pn.value.trim()) return fail('Please add your parent or guardian’s name.', pn);
+          if (!pe.value || !pe.checkValidity()) return fail('Please enter a valid email for your parent or guardian.', pe);
+          if (pe.value.trim().toLowerCase() === email.value.trim().toLowerCase()) return fail('Your parent’s email has to be different from yours.', pe);
+        }
+        err.hidden = true;
+        person.name = name.value.trim();
+        person.email = email.value.trim();
+        person.partner = $('youmind-partner').value.trim().toUpperCase();
+        person.age = age;
+        person.sport = $('npi-sport').value.trim();
+        person.parentName = age < 18 ? $('npi-parent-name').value.trim() : '';
+        person.parentEmail = age < 18 ? $('npi-parent-email').value.trim() : '';
+        person.source = window.ymNpiSource ? (window.ymNpiSource.get() || { source: 'direct' }) : null;
+        store.set(NPI_KEY, person);
+        try { localStorage.setItem('ym_person', JSON.stringify({ name: person.name, email: person.email, partner: person.partner })); } catch (e2) {}
+        if (age < 18 && !consentFor(person)) { renderConsent(); showCard('consent'); return; }
+        showPrivacy();
+      });
+
+      /* Back from the "you can start" email (?cleared=1), or reopened after the parent agreed. */
+      if (saved && saved.age >= 13 && saved.age < 18) {
+        Object.keys(saved).forEach(function (k) { person[k] = saved[k]; });
+        renderConsent(); showCard('consent');
+      }
+
+      /* Privacy notice: shown every time someone begins; confirming starts the assessment. */
+      var pop = $('privacyPop'), popGo = $('privacyGo'), popBack = $('privacyBack');
+      var popCard = pop.querySelector('.privacy-card'), popBg = pop.querySelector('.privacy-bg');
+      var popFrom = null;
+      function showPrivacy() {
+        $('privacyEmail').textContent = person.email;
+        popFrom = document.activeElement;
+        pop.getAnimations({ subtree: true }).forEach(function (a) { a.cancel(); });
+        pop.hidden = false;
+        document.documentElement.classList.add('pop-open');
+        if (!reduced() && popCard.animate) {
+          popBg.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 320, easing: 'ease-out' });
+          popCard.animate([{ opacity: 0, transform: 'translateY(18px) scale(0.96)' }, { opacity: 1, transform: 'none' }], { duration: 520, easing: EASE });
+        }
+        popGo.focus({ preventScroll: true });
+      }
+      function hidePrivacy(then) {
+        var done = function () {
+          pop.hidden = true;
+          document.documentElement.classList.remove('pop-open');
+          pop.getAnimations({ subtree: true }).forEach(function (a) { a.cancel(); });
+          if (then) then();
+        };
+        if (reduced() || !popCard.animate) { done(); return; }
+        popBg.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 240, easing: 'ease-in', fill: 'forwards' });
+        popCard.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateY(10px) scale(0.98)' }], { duration: 240, easing: 'ease-in', fill: 'forwards' }).onfinish = done;
+      }
+      popGo.addEventListener('click', function () { hidePrivacy(openAssessment); });
+      popBack.addEventListener('click', function () { hidePrivacy(function () { $('youmind-email').focus(); }); });
+      pop.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { e.preventDefault(); popBack.click(); return; }
+        if (e.key === 'Tab') {
+          var first = popBack, last = popGo;
+          if (e.shiftKey && document.activeElement === popGo) { e.preventDefault(); first.focus(); }
+          else if (!e.shiftKey && document.activeElement === popBack) { e.preventDefault(); last.focus(); }
+          else if (document.activeElement !== popGo && document.activeElement !== popBack) { e.preventDefault(); popGo.focus(); }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

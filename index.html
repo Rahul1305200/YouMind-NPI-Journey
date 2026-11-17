@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#cafdf9">
+  <title>YouMind × NPI · Athlete journey</title>
+  <meta name="description" content="Every page and email in the YouMind × NPI athlete journey, from the locker QR code to the unlocked protocol.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="npi.css?v=12">
+  <style>
+    html { background: #fff; }
+    body { margin: 0; color: #031728; background: #fff; -webkit-font-smoothing: antialiased; }
+    .ov-top { padding: 20px var(--ymct-gutter) 0; background: linear-gradient(179.5deg, #cafdf9 22.283%, #ffffff 99.346%); }
+    .ov-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: var(--npi-max); margin: 0 auto; padding: 10px 14px 10px 32px; border-radius: 100px; background: #fff; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .06); }
+    .ov-bar img { height: 48px; width: auto; display: block; filter: brightness(0); }
+    .ov-reset { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; border: 0; border-radius: 100px; cursor: pointer; background: rgba(0, 0, 0, .04); box-shadow: inset 0 0 0 1px rgba(15, 15, 15, .10); font: 500 15px/1 Inter, Arial, sans-serif; color: #031728; }
+    .ov-reset:hover { background: rgba(0, 0, 0, .07); }
+    .ov-reset img { width: 16px; height: 16px; display: block; }
+    .ov-hero { max-width: var(--npi-max); margin: 0 auto; padding: 72px 0 64px; }
+    .ov-hero .npi-desc { color: #031728; }
+    .ov-paths { display: grid; gap: 12px; max-width: var(--npi-max); margin: 0 auto; }
+    .ov-path { display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: center; padding: 16px 20px; border-radius: 20px; background: #fff; box-shadow: inset 0 0 0 1px #f2f2f2; }
+    .ov-path h2 { margin: 0; font: 500 16px/1.4 Inter, Arial, sans-serif; color: #021019; }
+    .ov-path h2 small { display: block; font: 400 13px/1.4 Inter, Arial, sans-serif; color: #59646f; }
+    .ov-path ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 6px; }
+    .ov-path li { display: inline-flex; align-items: center; gap: 6px; font: 400 14px/1.3 Inter, Arial, sans-serif; color: #031728; }
+    .ov-path li a { display: inline-flex; align-items: center; height: 34px; padding: 0 14px; border-radius: 100px; background: rgba(0, 0, 0, .03); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .02); color: inherit; text-decoration: none; transition: background .2s, color .2s; }
+    .ov-path li a:hover { background: rgba(25, 154, 145, .10); color: #0f6e68; }
+    .ov-path li a.is-mail { background: rgba(102, 252, 241, .22); }
+    .ov-path li:not(:last-child)::after { content: ""; width: 14px; height: 14px; background: no-repeat center/contain url("assets/icons/icon-cdb593d00d4f7d87.svg"); }
+    @media (max-width: 767px) { .ov-path { grid-template-columns: 1fr; gap: 10px; } .ov-hero { padding: 48px 0 40px; } .ov-bar { padding: 8px 10px 8px 20px; } .ov-bar img { height: 40px; } }
+
+    .ov-steps { padding: 72px var(--ymct-gutter) var(--ymct-pad); }
+    .ov-steps-in { max-width: var(--npi-max); margin: 0 auto; }
+    .ov-grid { list-style: none; margin: 36px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .ov-card { display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 30px; background: #fff; box-shadow: inset 0 0 0 1px #f2f2f2; }
+    .ov-card-top { display: flex; align-items: center; gap: 12px; }
+    .ov-num { width: 34px; height: 34px; flex: none; border-radius: 50%; display: grid; place-items: center; font: 500 14px/1 Inter, Arial, sans-serif; color: #fff; background: linear-gradient(180deg, #199a91 0%, #082725 100%); }
+    .ov-kind { display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 12px; border-radius: 100px; font: 500 13px/1 Inter, Arial, sans-serif; color: #0f6e68; background: rgba(25, 154, 145, .08); }
+    .ov-kind img { width: 14px; height: 14px; display: block; object-fit: contain; }
+    .ov-kind img[src*="a46f944a"] { filter: brightness(.55) saturate(1.4); }
+    .ov-kind--mail { color: #0a4d49; background: rgba(102, 252, 241, .3); }
+    .ov-who { margin-left: auto; font: 400 13px/1.3 Inter, Arial, sans-serif; color: #59646f; }
+    .ov-card h3 { margin: 4px 0 0; font: 500 22px/1.35 Inter, Arial, sans-serif; color: #0a0a0a; }
+    .ov-card p { margin: 0; font: 400 16px/1.6 Inter, Arial, sans-serif; color: #565656; }
+    .ov-card .ov-file { margin-top: auto; padding-top: 6px; font: 400 13px/1.5 Inter, Arial, sans-serif; color: #59646f; word-break: break-all; }
+    .ov-card .npi-cta { align-self: flex-start; margin-top: 6px; }
+    @media (max-width: 900px) { .ov-grid { grid-template-columns: 1fr; } }
+
+    .ov-notes { padding: var(--ymct-pad) var(--ymct-gutter); background: #0d313b; color: #ecf7f9; }
+    .ov-notes-in { max-width: var(--npi-max); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; }
+    .ov-notes .npi-h2 { color: #ecf7f9; font-size: 40px; }
+    .ov-notes .npi-findings { margin-top: 0; }
+    .ov-notes code { font: 500 13px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; color: #66fcf1; }
+    @media (max-width: 1023px) { .ov-notes-in { grid-template-columns: 1fr; gap: 32px; } .ov-notes .npi-h2 { font-size: 32px; } }
+    .ov-foot { padding: 28px var(--ymct-gutter); text-align: center; font: 400 13px/1.6 Inter, Arial, sans-serif; color: #59646f; }
+  </style>
+<meta name="robots" content="noindex">
+</head>
+<body class="npi-page">
+  <header class="ov-top">
+    <div class="ov-bar">
+      <span class="npi-mark"><img src="assets/065c9eb59e0f98fd.png" alt="YouMind"><span class="npi-x" aria-hidden="true">×</span> <b>NPI</b></span>
+      <button type="button" class="ov-reset" id="resetBtn" title="Clears what this prototype remembers in your browser">
+        <img src="assets/icons/icon-bd5d19d453a3430d.svg" alt="" width="16" height="16">
+        <span>Start over</span>
+      </button>
+    </div>
+
+    <div class="ov-hero">
+      <h1 class="npi-h1">The NPI athlete journey</h1>
+      <p class="npi-desc">Every page and email, from the QR code in the NPI locker to the unlocked protocol. Click through them in order; each opens in a new tab, and the prototype remembers what you typed so the next step follows on.</p>
+
+      <div class="ov-paths" style="margin-top:36px">
+        <section class="ov-path" aria-labelledby="path18">
+          <h2 id="path18">18 and over<small>Signs up and pays alone</small></h2>
+          <ol>
+            <li><a href="npi.html?src=npi&amp;from=flyer" target="_blank" rel="noopener">NPI page</a></li>
+            <li><a href="assessment.html?src=npi&amp;from=flyer&amp;code=NPI" target="_blank" rel="noopener">Check-in</a></li>
+            <li><a class="is-mail" href="emails/03-assessment-received.html" target="_blank" rel="noopener">Check-in received</a></li>
+            <li><a class="is-mail" href="emails/04-starter-insight-ready.html" target="_blank" rel="noopener">Starter insight ready</a></li>
+            <li><a href="insight.html#profile" target="_blank" rel="noopener">Starter insight + unlock</a></li>
+            <li><a class="is-mail" href="emails/06-payment-received.html" target="_blank" rel="noopener">Receipt</a></li>
+            <li><a href="insight.html?paid=1&amp;payer=self" target="_blank" rel="noopener">Protocol unlocked</a></li>
+          </ol>
+        </section>
+        <section class="ov-path" aria-labelledby="path13">
+          <h2 id="path13">13 to 17<small>A parent says yes, and pays</small></h2>
+          <ol>
+            <li><a href="npi.html?src=npi&amp;from=card" target="_blank" rel="noopener">NPI page</a></li>
+            <li><a href="assessment.html?src=npi&amp;from=card&amp;code=NPI" target="_blank" rel="noopener">Check-in</a></li>
+            <li><a class="is-mail" href="emails/01-parent-consent.html" target="_blank" rel="noopener">Parent: consent request</a></li>
+            <li><a href="consent.html" target="_blank" rel="noopener">Parent: consent page</a></li>
+            <li><a class="is-mail" href="emails/02-athlete-cleared.html" target="_blank" rel="noopener">You’re good to go</a></li>
+            <li><a href="assessment.html?cleared=1" target="_blank" rel="noopener">Check-in</a></li>
+            <li><a class="is-mail" href="emails/03-assessment-received.html" target="_blank" rel="noopener">Check-in received</a></li>
+            <li><a class="is-mail" href="emails/04-starter-insight-ready.html" target="_blank" rel="noopener">Starter insight ready</a></li>
+            <li><a href="insight.html#profile" target="_blank" rel="noopener">Starter insight + unlock</a></li>
+            <li><a class="is-mail" href="emails/05-parent-payment.html" target="_blank" rel="noopener">Parent: payment link</a></li>
+            <li><a class="is-mail" href="emails/06-payment-received.html" target="_blank" rel="noopener">Parent: receipt</a></li>
+            <li><a href="insight.html?paid=1&amp;payer=parent" target="_blank" rel="noopener">Protocol unlocked</a></li>
+          </ol>
+        </section>
+        <section class="ov-path" aria-labelledby="path12">
+          <h2 id="path12">Under 13<small>Can’t take part yet</small></h2>
+          <ol>
+            <li><a href="npi.html?src=npi&amp;from=guide" target="_blank" rel="noopener">NPI page</a></li>
+            <li><a href="assessment.html?src=npi&amp;from=guide&amp;code=NPI" target="_blank" rel="noopener">Check-in: stops kindly at the age step</a></li>
+          </ol>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <main class="ov-steps">
+    <div class="ov-steps-in">
+      <h2 class="npi-h2">Every step</h2>
+      <p class="npi-desc">Pages are what the athlete or parent sees in the browser. Emails are what lands in their inbox.</p>
+      <ol class="ov-grid" id="steps"></ol>
+    </div>
+  </main>
+
+  <section class="ov-notes" aria-labelledby="rulesTitle">
+    <div class="ov-notes-in">
+      <div>
+        <h2 class="npi-h2" id="rulesTitle">The rules this journey follows</h2>
+        <p class="npi-dark-lead">Decided with Keith (YouMind), 17 Nov 2026.</p>
+      </div>
+      <ul class="npi-findings">
+        <li><b>Nobody sees the results</b><span>Not NPI, not coaches, colleges or recruiters, and not parents. Parents give consent and pay; they get those emails and a receipt, nothing more.</span></li>
+        <li><b>Free first, then one clear price</b><span>One free voice check-in and a starter insight per athlete, within the first 90 days. Then USD 49, once, for the full profile and a 90-day protocol. Nothing renews; under 18, the parent pays.</span></li>
+        <li><b>Age decides the path</b><span>Under 13 can’t take part. 13 to 17 need a parent’s consent by email before the check-in. 18 and over consent for themselves.</span></li>
+        <li><b>Every sign-up is counted as NPI</b><span>Each QR code carries its own tag (<code>?src=npi&amp;from=flyer</code>, <code>card</code> or <code>guide</code>). The first source is kept for 90 days and never overwritten; typing the code NPI also counts. The real build saves it with the sign-up and sends it to the CRM as lead source NPI.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <p class="ov-foot">YouMind × NPI · Prototype pages: nothing here is stored on a server, sends a real email or takes a real payment. Sample names: Jordan (athlete) and Sam (parent).</p>
+
+  <script>
+    (function () {
+      var ICON_PAGE = '<img src="assets/icons/icon-f962cbacb91f797e.svg" alt="" width="14" height="14">';
+      var ICON_MAIL = '<img src="assets/icons/icon-a46f944a15e51ade.svg" alt="" width="14" height="14">';
+      var ARROW = '<span class="npi-cta-circle" aria-hidden="true"><img src="https://youmind.org/wp-content/plugins/youmind-custom-toolkit/assets/images/button-arrow.png" alt="" width="18" height="18"></span>';
+      var STEPS = [
+        ['page', 'Everyone', 'NPI page', 'Where the QR code lands. The free check-in, the three steps from the flyer, who sees results (no one), a section for parents and questions. It remembers which item they scanned.', 'npi.html?src=npi&from=flyer'],
+        ['page', 'Athlete', 'Check-in: about you', 'Name, email, age and sport, with code NPI filled in. Under 13 stops kindly. 13 to 17 add a parent’s name and email. 18 and over go straight to the voice steps.', 'assessment.html?src=npi&from=flyer&code=NPI'],
+        ['mail', 'Parent', 'Email A: consent request', 'Sent to the parent of a 13 to 17 year old. What the check-in is, what stays with the athlete, one button to agree.', 'emails/01-parent-consent.html'],
+        ['page', 'Parent', 'Parent consent', 'The parent types their name, confirms they’re the parent or guardian, and agrees (or doesn’t). It says plainly that they won’t see the results.', 'consent.html'],
+        ['mail', 'Athlete', 'Email B: you’re good to go', 'Sent to the athlete once the parent agrees. One button back to the check-in.', 'emails/02-athlete-cleared.html'],
+        ['page', 'Athlete', 'Check-in: voice steps', 'Two short voice baselines, then five questions, worded for an athlete. They can type instead of talking. Ends on a thank-you page.', 'assessment.html?cleared=1'],
+        ['mail', 'Athlete', 'Email 1: check-in received', 'Right after the check-in. The starter insight will be ready within 15 minutes.', 'emails/03-assessment-received.html'],
+        ['mail', 'Athlete', 'Email 2: starter insight ready', 'One button to the starter insight, and a short note about the USD 49 option.', 'emails/04-starter-insight-ready.html'],
+        ['page', 'Athlete', 'Starter insight and unlock', 'The free starter insight, then the full profile locked behind one card. Unlocking costs USD 49 once; under 18, the athlete sends the payment link to their parent.', 'insight.html#profile'],
+        ['mail', 'Parent', 'Email C: payment link', 'Only when an athlete under 18 asks to continue. USD 49, once; paying gives the parent no access to results.', 'emails/05-parent-payment.html'],
+        ['mail', 'Whoever paid', 'Email D: receipt', 'Amount, what it covers, the 90-day dates, and “Renews: No”.', 'emails/06-payment-received.html'],
+        ['page', 'Athlete', 'Protocol unlocked', 'The same page, now unlocked: the full profile, the sessions and the dashboard.', 'insight.html?paid=1&payer=self']
+      ];
+      var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+      document.getElementById('steps').innerHTML = STEPS.map(function (s, i) {
+        var mail = s[0] === 'mail';
+        return '<li class="ov-card">' +
+          '<div class="ov-card-top"><span class="ov-num" aria-hidden="true">' + (i + 1) + '</span>' +
+          '<span class="ov-kind' + (mail ? ' ov-kind--mail' : '') + '">' + (mail ? ICON_MAIL + 'Email' : ICON_PAGE + 'Page') + '</span>' +
+          '<span class="ov-who">' + esc(s[1]) + '</span></div>' +
+          '<h3>' + esc(s[2]) + '</h3><p>' + esc(s[3]) + '</p>' +
+          '<p class="ov-file">' + esc(s[4]) + '</p>' +
+          '<a class="npi-cta" href="' + esc(s[4]) + '" target="_blank" rel="noopener"><span>Open ' + (mail ? 'email' : 'page') + '</span>' + ARROW + '</a>' +
+          '</li>';
+      }).join('');
+      document.getElementById('resetBtn').addEventListener('click', function () {
+        ['ym_npi_source', 'ym_npi_person', 'ym_npi_consent', 'ym_npi_done', 'ym_person', 'ym_paid'].forEach(function (k) { try { localStorage.removeItem(k); } catch (e) {} });
+        var b = this; b.querySelector('span').textContent = 'Cleared';
+        setTimeout(function () { b.querySelector('span').textContent = 'Start over'; }, 1800);
+      });
+    })();
+  </script>
+</body>
+</html>
